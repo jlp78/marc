@@ -4,7 +4,7 @@ const ZOOM_MEETING_ID = "<INSERT ZOOM MEETING ID HERE>";
 const ZOOM_PASSCODE = "<INSERT ZOOM PASSCODE HERE>";
 const CALENDAR_ID = "<INSERT CALENDAR ID HERE>";
 const SLACK_WEBHOOK_URL = "<INSERT SLACK WEBHOOK URL HERE>";
-
+const MAIL_DESTINATION = "<INSERT COMMA SEPARATED E-MAIL ADDRESSES HERE>";
 // --- END CONFIGURATION ---
 
 
@@ -76,8 +76,7 @@ function sendMARCWeeklyUpdate() {
 
   // 3. Construct the Email
   const asUsualSuffix = meetingInfo.isAsUsual ? ", as usual" : "";
-  // const mailingLists = "marc-announce@freelists.org, utah-multi-arc@freelists.org";
-  const mailingLists = "jlp@jay-one.org";
+  const mailingLists = "${MAIL_DESTINATION}";
   
   const emailSubject = `Upcoming MARC Meeting: ${meetingInfo.topic}`;
   const emailBody = `Greetings, Folks!

@@ -31,6 +31,7 @@ The system utilizes Global Constants for easy maintenance. Key variables located
 | `ZOOM_PASS` | Meeting passcode. |
 | `CALENDAR_ID` | The unique ID for the MARC Events Google Calendar. |
 | `SLACK_WEBHOOK_URL` | The integration URL for the club Slack channel. |
+| `MAIL_DESTINATION` | The To: address for the e-mail. |
 
 *Note: For enhanced security, these can be migrated to the Apps Script **Script Properties** service.*
 
